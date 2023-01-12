@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> Epic Mailman Game</header>
+        <body>
+            <h1 id="pageTitle"></h1>
+            <div id="gameContainer">
+ 
+                    <div id="mainMenuContainer" style="display:block;">
+                        <button onclick="newGameFunction()"id="newGamebtn">New Game</button>
+                        <button id="loadGamebtn">Load Saved Game</button>
+                        <button id="aboutGamebtn">About</button>
+                        <button id="exit">EXIT</button>
+                    </div>
+
+                    <div id="nameContainer" style="display:none;">
+                        <form>
+                            <label for="fname">FIRST NAME:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">LAST NAME:</label><br>
+                            <input type="text" id="lname" name="lname">
+                        </form>
+                        <button onclick="nameMenuStartGameFunction()"id="nameMenuStartbtn">Start</button>
+                        <button id="exit">Quit Game</button>
+                    </div>
+
+                    <div id="playingContainer" style="display:none;">
+                        <button onclick="ingameRunFunction()"id="runbtn">Run</button>
+                        <button onclick="exitFunction()"id="exit">Quit Game</button>
+                    </div>
+                   
+
+            </div>
+
+            <!--below is test stuff
+            <button onclick="myFunction()">ON/OFF</button>
+            above is test stuff-->
+        </body>
+</body>
+</html>

@@ -1,0 +1,52 @@
+#gameContainer{
+    width: 60%;
+    min-height: 90px;
+    max-height: 90px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    hieght
+
+
+}
+
+#mainMenuContainer{
+    display: block;
+
+}
+
+#nameContainer{
+    display: none;
+}
+  
+#playingContainer{
+    display: none;
+}
+
+#namePlayerPage {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+#playGamePage {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+#youWinPage {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+  }
+
+  .newGamebtn{
+    background: rgb(211, 0, 0);
+    color: rgb(166, 166, 38);
+  }
