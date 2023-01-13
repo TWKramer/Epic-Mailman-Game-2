@@ -1,17 +1,82 @@
-let isNamePageActive = true;
-let isGameplayActive = false;
-let isMainMenuActive = false;
-let gameWon = false;
+let isMainMenuOpen = true;
+let isNamePageOpen = false;
+let isGameplayOpen = false;
+let isGameResultPageOpen = false;
+let stateOfPage
 
-if (isMainMenuActive = true){
+// the next 4 if statements represent the 4 pages I have coded into the game.
+//main menu, enter your name, play the game, did you win or not... those
+//are the 4 UI's basically
+
+if (isMainMenuOpen = true){
+let isNamePageOpen = false;
+let isGameplayOpen = false;
+let isGameResultPageOpen = false;
   
 }
 
+//above is the state of the user in the main menu. Page One
+
+if (isNamePageOpen = true){
+let isMainMenuOpen = false;
+let isGameplayOpen = false;
+let isGameResultPageOpen = false;
+  
+}
+
+//above is the state of the user in the page where you
+//create a name for your character. Page Two
 
 
+if (isGameplayOpen = true){
+let isMainMenuOpen = false;
+let isNamePageOpen = false;
+let isGameResultPageOpen = false;
+  
+}
+
+//above is the state of the user acutally playing the game Page Three
 
 
+if (isGameResultPageOpen = true){
+let isMainMenuOpen = false;
+let isNamePageOpen = false;
+let isGameplayOpen = false;
 
+}
+
+//above is the state of the user has finished the game and win loss result is being show Page Four
+
+function newGameFunction() {
+  let isMainMenuOpen = false;
+  let isNamePageOpen = true;
+    if (isMainMenuOpen === false){
+      var mainMenu = document.getElementById("mainMenuContainer")
+      mainMenu.style.display = "none";
+    if (isNamePageOpen === true){
+      var namePage = document.getElementById("nameContainer")
+      namePage.style.display = "block";
+    }
+}
+}
+//below is the function i've added which is called after you enter the name of your character
+//and you are ready to begin the game... this function will save input info, close the namePage, and begin the gameplay all in one click
+function createPlayerAndBeginFunction() {
+  let isMainMenuOpen = false;
+  let isNamePageOpen = false;
+  let isGameplayOpen = true;
+    if (isMainMenuOpen === false){
+      var namepage = document.getElementById("nameContainer")
+      namePage.style.display = "none";
+    if (isGameplayOpen === true){
+      var gameplayPage = document.getElementById("playingContainer")
+      gameplayPage.style.display = "block";
+    }
+}
+}
+  
+
+/*
 function newGameFunction() {
   var newGame = document.getElementById("mainMenuContainer");
     if (newGame.style.display === "none") {
@@ -41,7 +106,7 @@ function nameMenuStartGameFunction() {
       }
     }
 
-
+*/
 /*
 function myFunction() {
   document.getElementById("newGamebtn").onclick = function(){

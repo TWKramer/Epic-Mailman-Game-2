@@ -4,10 +4,41 @@
     max-height: 90px;
     padding: 50px 0;
     text-align: center;
-    background-color: lightblue;
+    background-color:rgb(0, 0, 0);
     margin-top: 20px;
-    hieght
+    border-radius: 15px;
+    border-style: solid; 
+    border-width: 8px;
+    border-color: rgb(255, 152, 18);
+    
 
+
+}
+#newGamebtn, #loadGamebtn, #aboutGamebtn, #nameMenuStartbtn{
+  color:rgb(0, 0, 0);
+  border-color:  rgb(4, 0, 255);
+  background-color: rgb(221, 125, 0);
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: bold;
+  font-size: large;
+
+}
+
+#nameMenuStartbtn{
+  color:rgb(0, 0, 0);
+  border-color:  rgb(4, 0, 255);
+  background-color: rgb(0, 151, 13);
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: bold;
+
+}
+#exit{
+  color:rgb(0, 0, 0);
+  border-color: rgb(4, 0, 255);
+  background-color: rgb(201, 0, 0);
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: bold;
+  font-size: large;
 
 }
 
