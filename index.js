@@ -2,25 +2,25 @@ let isMainMenuOpen = true;
 let isNamePageOpen = false;
 let isGameplayOpen = false;
 let isGameResultPageOpen = false;
-let stateOfPage
+let stateOfPage = false
 
 // the next 4 if statements represent the 4 pages I have coded into the game.
 //main menu, enter your name, play the game, did you win or not... those
 //are the 4 UI's basically
 
 if (isMainMenuOpen = true){
-let isNamePageOpen = false;
-let isGameplayOpen = false;
-let isGameResultPageOpen = false;
+isNamePageOpen = false;
+isGameplayOpen = false;
+isGameResultPageOpen = false;
   
 }
 
 //above is the state of the user in the main menu. Page One
 
 if (isNamePageOpen = true){
-let isMainMenuOpen = false;
-let isGameplayOpen = false;
-let isGameResultPageOpen = false;
+isMainMenuOpen = false;
+isGameplayOpen = false;
+isGameResultPageOpen = false;
   
 }
 
@@ -29,9 +29,9 @@ let isGameResultPageOpen = false;
 
 
 if (isGameplayOpen = true){
-let isMainMenuOpen = false;
-let isNamePageOpen = false;
-let isGameResultPageOpen = false;
+isMainMenuOpen = false;
+isNamePageOpen = false;
+isGameResultPageOpen = false;
   
 }
 
@@ -39,17 +39,17 @@ let isGameResultPageOpen = false;
 
 
 if (isGameResultPageOpen = true){
-let isMainMenuOpen = false;
-let isNamePageOpen = false;
-let isGameplayOpen = false;
+isMainMenuOpen = false;
+isNamePageOpen = false;
+isGameplayOpen = false;
 
 }
 
 //above is the state of the user has finished the game and win loss result is being show Page Four
 
 function newGameFunction() {
-  let isMainMenuOpen = false;
-  let isNamePageOpen = true;
+   isMainMenuOpen = false;
+   isNamePageOpen = true;
     if (isMainMenuOpen === false){
       var mainMenu = document.getElementById("mainMenuContainer")
       mainMenu.style.display = "none";
@@ -62,13 +62,12 @@ function newGameFunction() {
 //below is the function i've added which is called after you enter the name of your character
 //and you are ready to begin the game... this function will save input info, close the namePage, and begin the gameplay all in one click
 function createPlayerAndBeginFunction() {
-  let isMainMenuOpen = false;
-  let isNamePageOpen = false;
-  let isGameplayOpen = true;
+   isNamePageOpen = false;
+   isGameplayOpen = true;
     if (isMainMenuOpen === false){
-      var namepage = document.getElementById("nameContainer")
+      namepage = document.getElementById("nameContainer")
       namePage.style.display = "none";
-    if (isGameplayOpen === true){
+      if (isGameplayOpen === true){
       var gameplayPage = document.getElementById("playingContainer")
       gameplayPage.style.display = "block";
     }
