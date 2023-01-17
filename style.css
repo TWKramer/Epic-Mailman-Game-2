@@ -4,20 +4,20 @@
     max-height: 90px;
     padding: 50px 0;
     text-align: center;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(217, 216, 235);
     margin-top: 20px;
     border-radius: 15px;
     border-style: solid; 
     border-width: 8px;
-    border-color: rgb(255, 152, 18);
+    border-color: rgb(142, 0, 0);
     
 
 
 }
 #newGamebtn, #loadGamebtn, #aboutGamebtn, #nameMenuStartbtn{
   color:rgb(0, 0, 0);
-  border-color:  rgb(172, 172, 172);
-  background-color: rgb(221, 125, 0);
+  border-color:  rgb(0, 0, 0);
+  background-color: rgb(231, 231, 231);
   font-family: 'Courier New', Courier, monospace; 
   font-weight: bold;
   font-size: large;
@@ -50,10 +50,6 @@
 #nameContainer{
     display: none;
 }
-  
-#playingContainer{
-    display: none;
-}
 
 #namePlayerPage {
     width: 100%;
@@ -62,12 +58,11 @@
     background-color: lightblue;
     margin-top: 20px;
   }
-#playGamePage {
+#inGamePage {
     width: 100%;
-    padding: 50px 0;
     text-align: center;
-    background-color: lightblue;
     margin-top: 20px;
+    display: none;
   }
 #youWinPage {
     width: 100%;
@@ -80,4 +75,11 @@
   .newGamebtn{
     background: rgb(211, 0, 0);
     color: rgb(166, 166, 38);
+  }
+
+  #gamePausedAlert1{
+    margin-top: -6%;
+  }
+  #gamePausedAlert2{
+    margin-top: -6%;
   }

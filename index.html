@@ -9,32 +9,49 @@
     <title>Document</title>
 </head>
 <body>
-    <header> Epic Mailman Game</header>
+    <header>GO</header>
         <body>
             <h1 id="pageTitle"></h1>
             <div id="gameContainer">
  
                     <div id="mainMenuContainer" style="display:block;">
-                        <button onclick="newGameFunction()"id="newGamebtn">New Game</button>
-                        <button id="loadGamebtn">Load Saved Game</button>
-                        <button id="aboutGamebtn">About</button>
-                        <button id="exit">EXIT</button>
+                        <button onclick="newGameFunction()"id="newGamebtn">Begin</button>
+                        <button id="loadGamebtn">Load</button>
+                        <button id="aboutGamebtn">Help</button>
+                        <button onclick="exitFunction()"id="exit">EXIT</button>
                     </div>
 
                     <div id="nameContainer" style="display:none;">
-                        <form>
+                        <H1 id="gamePausedAlert1" style="display:none;">PAUSED</H1>
+                        <form id="nameForm1">
                             <label for="fname">FIRST NAME:</label><br>
                             <input type="text" id="fname" name="fname"><br>
                             <label for="lname">LAST NAME:</label><br>
                             <input type="text" id="lname" name="lname">
                         </form>
+                        <div id="namePageButtons">
                         <button onclick="createPlayerAndBeginFunction()"id="nameMenuStartbtn">Start</button>
-                        <button id="exit">QUIT</button>
+                        <button onclick="quitFunction1()"id="quitbtn1">QUIT</button>
+                        </div>
+                        <div id="quitMessageBox1" style="display:none;">
+                            <div id="quitMessage1" style="display:none;">Are you sure you want to quit and return to the main menu? All progress will be lost...</div>
+                            <button onclick="yesQuitFunction1()"id="yesQuitbtn1" >Yes</button>
+                            <button onclick="dontQuitFunction1()"id="noQuitbtn1">No</button>
+                        </div>
                     </div>
 
-                    <div id="playingContainer" style="display:none;">
+                    <div id="inGamePage" style="display:none;">
+
+                        <H1 id="gamePausedAlert2" style="display:none;">PAUSED</H1>
+                        <div id="inGameButtons">
                         <button onclick="ingameRunFunction()"id="runbtn">Run</button>
-                        <button onclick="exitFunction()"id="exit">QUIT</button>
+                        <button onclick="quitFunction2()"id="quitbtn2" >QUIT</button>
+                        </div>
+                            <div id="quitMessageBox2" style="display:none;">
+                                <div id="quitMessage2" style="display:none;">Are you sure you want to quit and return to the main menu? All progress will be lost...</div>
+                                <button onclick="yesQuitFunction2()"id="yesQuitbtn2" >Yes</button>
+                                <button onclick="dontQuitFunction2()"id="noQuitbtn2">No</button>
+                            </div>
                     </div>
                    
 
